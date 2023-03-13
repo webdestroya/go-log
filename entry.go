@@ -73,6 +73,7 @@ func (e *Entry) WithError(err error) *Entry {
 
 	ctx := e.WithField(ErrorKey, err.Error())
 
+	//nolint:errorlint
 	if f, ok := err.(Fielder); ok {
 		ctx = ctx.WithFields(f.Fields())
 	}

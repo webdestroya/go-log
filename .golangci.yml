@@ -24,7 +24,6 @@ linters:
     - depguard
     - goconst
     - makezero
-    - nonamedreturns
     - predeclared
     - gocritic
     - importas
