@@ -1,4 +1,4 @@
-package tieredlog
+package log
 
 var (
 	DefaultTier int = 0

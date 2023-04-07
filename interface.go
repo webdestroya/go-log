@@ -1,4 +1,4 @@
-package tieredlog
+package log
 
 // Interface represents the API of both Logger and Entry.
 type Interface interface {

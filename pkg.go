@@ -1,4 +1,4 @@
-package tieredlog
+package log
 
 import (
 	"io"
@@ -66,6 +66,11 @@ func WithoutPadding() *Entry {
 	return Log.WithoutPadding()
 }
 
+// Trace level message.
+func Trace(msg string) {
+	Log.Trace(msg)
+}
+
 // Debug level message.
 func Debug(msg string) {
 	Log.Debug(msg)
@@ -89,6 +94,11 @@ func Error(msg string) {
 // Fatal level message, followed by an exit.
 func Fatal(msg string) {
 	Log.Fatal(msg)
+}
+
+// Tracef level formatted message.
+func Tracef(msg string, v ...interface{}) {
+	Log.Tracef(msg, v...)
 }
 
 // Debugf level formatted message.

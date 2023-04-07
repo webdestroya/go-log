@@ -11,7 +11,7 @@ snapshot:
 
 release:
   footer: |
-    **Full Changelog**: https://github.com/webdestroya/tieredlog/compare/{{ .PreviousTag }}...{{ .Tag }}
+    **Full Changelog**: https://github.com/webdestroya/go-log/compare/{{ .PreviousTag }}...{{ .Tag }}
 
 changelog:
   skip: true

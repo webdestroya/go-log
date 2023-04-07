@@ -1,4 +1,4 @@
-package tieredlog
+package log
 
 import "context"
 
